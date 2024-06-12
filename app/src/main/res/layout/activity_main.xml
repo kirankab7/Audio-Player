@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/container"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+
+    <!--on below line we are creating
+        a text for heading of our app-->
+
+
+
+    <!--on below line we are creating an
+        image button for playing our audio-->
+    <ImageButton
+        android:id="@+id/idIBPlay"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_centerInParent="true"
+        android:background="@android:color/transparent"
+        android:src="@drawable/ic_play_foreground"
+        android:contentDescription="play"
+        app:tint="@color/black" />
+
+    <!--on below line we are creating image
+        button for pausing our audio-->
+    <ImageButton
+        android:id="@+id/idIBPause"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_below="@id/idIBPlay"
+        android:layout_centerHorizontal="true"
+        android:background="@android:color/transparent"
+        android:src="@drawable/ic_pause_foreground"
+        android:contentDescription="pause"
+        app:tint="@color/black" />
+
+</RelativeLayout>
